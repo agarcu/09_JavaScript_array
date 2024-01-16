@@ -7,6 +7,8 @@
  * expected BEATLES: ["George", "Ringo"];
  */
 
+const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
+const BEATLES = ["John", "George", "Paul", "Ringo"];
 
 import getLongWords from "./getLongWords.js";
 

@@ -7,3 +7,11 @@
  */
 
 const MONKEYS = ["🐒", "🦍", "🦧"];
+
+function feedMonkeys(fruit) {
+  const result = [];
+  for (let i = 0; i < MONKEYS.length; i++) {
+    result.push(`${MONKEYS[i]} ${fruit}`);
+  }
+  return result;
+}
