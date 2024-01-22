@@ -12,3 +12,18 @@
  */
 
 const LOCALES = ["EN", "GR", "FR", "IT", "PT"];
+
+function createLocalesSettings(locales) {
+    const localesSettings = {};
+
+    for (let i = 0; i < locales.length; i++) {
+        localesSettings[locales[i]] = {
+            id: i,
+            enabled: i === 0, // Només el primer element té enabled a true, la resta a false
+        };
+    }
+
+    return localesSettings;
+}
+
+export default createLocalesSettings;
