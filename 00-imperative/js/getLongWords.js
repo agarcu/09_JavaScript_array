@@ -8,3 +8,18 @@
 
 const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
 const BEATLES = ["John", "George", "Paul", "Ringo"];
+
+function getLongWords(words) {
+  const longWords = [];
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length >= 5) {
+      longWords.push(words[i]);
+    }
+  }
+
+  return longWords;
+}
+
+// Export the function for testing purposes
+module.exports = getLongWords;

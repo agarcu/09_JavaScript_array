@@ -5,3 +5,9 @@
  */
 
 const VALUES = [1, 2, 3];
+
+function getWordFromValues(values) {
+    return values.join('');
+  }
+  
+  export default getWordFromValues;
